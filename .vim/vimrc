@@ -1,0 +1,42 @@
+" =================================================
+" Vundle plugin configs
+" =================================================
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.dotfiles/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" Keep Plugin commands between vundle#begin/end.
+Plugin 'tpope/vim-fugitive'
+Plugin 'dracula/vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-surround'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-sensible'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" =================================================
+" troubalex' config
+" =================================================
+syntax on
+set smartindent
+set clipboard=unnamed     " use os clipboard
+set tabstop=2             " number of visual spaces per tab
+set softtabstop=2         " number of spaces in tab when editing
+set expandtab             " tab to spaces
+set number                " show line numbers
+set cursorline            " highlight current line
+set showmatch             " highlight matching [{()}]
+set incsearch             " search as characters are entered
+set hlsearch              " highlight matches
+set noswapfile
+inoremap jk <ESC>         " map ESC to jk
+let mapleader = "<Space>"
