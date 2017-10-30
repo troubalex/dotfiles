@@ -19,7 +19,7 @@ export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWCOLORHINTS=true
 
 ### pretty prompt
-export PS1='🐌 🦄 `if [ $? = 0 ]; then echo -e "😃"; else echo -e "😡"; fi` \w\[\033[31m\] $(__git_ps1) \[\033[01;34m\]$\[\033[00m\] '
+export PS1='🐌🦄 `if [ $? = 0 ]; then echo -e "☺️ "; else echo -e "🙄"; fi` \w\[\033[31m\] $(__git_ps1) \[\033[01;34m\]$\[\033[00m\] '
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
