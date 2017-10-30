@@ -12,12 +12,15 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Keep Plugin commands between vundle#begin/end.
-Plugin 'tpope/vim-fugitive'
 Plugin 'dracula/vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tpope/vim-ragtag'
 Plugin 'tpope/vim-surround'
 Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-sensible'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'chemzqm/vim-jsx-improve'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -27,16 +30,33 @@ filetype plugin indent on    " required
 " troubalex' config
 " =================================================
 syntax on
+color dracula
+inoremap jk <ESC>         " map ESC to jk
 set smartindent
 set clipboard=unnamed     " use os clipboard
 set tabstop=2             " number of visual spaces per tab
 set softtabstop=2         " number of spaces in tab when editing
 set expandtab             " tab to spaces
 set number                " show line numbers
+set numberwidth=4
 set cursorline            " highlight current line
 set showmatch             " highlight matching [{()}]
 set incsearch             " search as characters are entered
 set hlsearch              " highlight matches
+set breakindent           " keep indentation when breaking long lines
+set list listchars=tab:»·,trail:·,nbsp:·
 set noswapfile
-inoremap jk <ESC>         " map ESC to jk
-let mapleader = "<Space>"
+let g:airline#extensions#tabline#enabled = 1      " Enable the list of buffers
+let g:airline#extensions#tabline#fnamemod = ':t'  " Show only the filename
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" Open new split panes to right and bottom, which feels more natural
+set splitbelow
+set splitright
+
+" Quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
