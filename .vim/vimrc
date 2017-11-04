@@ -21,6 +21,7 @@ Plugin 'bling/vim-airline'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'chemzqm/vim-jsx-improve'
+Plugin 'mattn/emmet-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
