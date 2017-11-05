@@ -33,6 +33,7 @@ filetype plugin indent on    " required
 syntax on
 color dracula
 inoremap jk <ESC>         " map ESC to jk
+let mapleader = '<Space>' " make Space the leader key
 set smartindent
 set clipboard=unnamed     " use os clipboard
 set tabstop=2             " number of visual spaces per tab
