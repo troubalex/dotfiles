@@ -29,9 +29,9 @@ eval "$(rbenv init -)"
 export PATH="$HOME/.dotfiles/.rbenv:$PATH"
 
 ### Aliases
-alias bx="bundle exec"
+alias bex="bundle exec"
 
-alias gs="git status"
+alias gs="git status -s"
 alias gl="git log"
 alias gp="git pull --rebase"
 alias gc="git commit -a -m "
